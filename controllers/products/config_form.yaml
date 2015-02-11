@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Product
+
+# Model Form Field configuration
+form: $/iillexial/catalog/models/product/fields.yaml
+
+# Model Class name
+modelClass: Iillexial\Catalog\Models\Product
+
+# Default redirect location
+defaultRedirect: iillexial/catalog/products
+
+# Create page
+create:
+    title: Create Product
+    redirect: iillexial/catalog/products/update/:id
+    redirectClose: iillexial/catalog/products
+
+# Update page
+update:
+    title: Edit Product
+    redirect: iillexial/catalog/products
+    redirectClose: iillexial/catalog/products
+
+# Preview page
+preview:
+    title: Preview Product
